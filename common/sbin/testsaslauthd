@@ -1,0 +1,6 @@
+#!/bin/sh
+
+. /home/rex/Desktop/Code/WordPress/Ytube/scripts/setenv.sh
+SASL_PATH="/home/rex/Desktop/Code/WordPress/Ytube/common/lib/sasl2"
+                export SASL_PATH
+exec /home/rex/Desktop/Code/WordPress/Ytube/common/sbin/.testsaslauthd.bin -f "/home/rex/Desktop/Code/WordPress/Ytube/common/etc/sasldb2" "$@"

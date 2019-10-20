@@ -1,0 +1,3 @@
+#!/bin/sh
+. /home/rex/Desktop/Code/WordPress/Ytube/apache2/bin/envvars
+exec /home/rex/Desktop/Code/WordPress/Ytube/apache2/bin/pagespeed_js_minify.bin "$@"

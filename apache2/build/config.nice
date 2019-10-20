@@ -1,0 +1,35 @@
+#! /bin/sh
+#
+# Created by configure
+
+CC="gcc"; export CC
+CFLAGS="-I/home/rex/Desktop/Code/WordPress/Ytube/common/include -fPIC -m64"; export CFLAGS
+CPPFLAGS="-I/home/rex/Desktop/Code/WordPress/Ytube/common/include"; export CPPFLAGS
+LDFLAGS="-L/home/rex/Desktop/Code/WordPress/Ytube/common/lib -liconv"; export LDFLAGS
+"./configure" \
+"--prefix=/home/rex/Desktop/Code/WordPress/Ytube/apache2" \
+"--enable-so" \
+"--enable-mods-shared=most" \
+"--disable-auth_dbm" \
+"--without-berkeley-db" \
+"--enable-deflate" \
+"--enable-ssl" \
+"--with-ssl=/home/rex/Desktop/Code/WordPress/Ytube/common" \
+"--enable-proxy" \
+"--enable-proxy-http" \
+"--enable-proxy-balancer" \
+"--enable-rewrite" \
+"--with-ldap" \
+"--enable-authnz-ldap" \
+"--enable-ldap" \
+"--with-apr=/home/rex/Desktop/Code/WordPress/Ytube/common/bin/apr-1-config" \
+"--with-apu=/home/rex/Desktop/Code/WordPress/Ytube/common/bin/apr-1-config" \
+"--with-pcre=/home/rex/Desktop/Code/WordPress/Ytube/common/bin/pcre-config" \
+"--enable-mpms-shared=all" \
+"--with-nghttp2=/home/rex/Desktop/Code/WordPress/Ytube/common/lib" \
+"--with-mpm=prefork" \
+"CC=gcc" \
+"CFLAGS=-I/home/rex/Desktop/Code/WordPress/Ytube/common/include -fPIC -m64" \
+"LDFLAGS=-L/home/rex/Desktop/Code/WordPress/Ytube/common/lib -liconv" \
+"CPPFLAGS=-I/home/rex/Desktop/Code/WordPress/Ytube/common/include" \
+"$@"

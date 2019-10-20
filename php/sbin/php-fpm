@@ -1,0 +1,5 @@
+#!/bin/sh
+
+. /home/rex/Desktop/Code/WordPress/Ytube/scripts/setenv.sh
+
+exec /home/rex/Desktop/Code/WordPress/Ytube/php/sbin/.php-fpm.bin -y /home/rex/Desktop/Code/WordPress/Ytube/php/etc/php-fpm.conf -p /home/rex/Desktop/Code/WordPress/Ytube/php/var/ -c /home/rex/Desktop/Code/WordPress/Ytube/php/etc/php.ini "$@"

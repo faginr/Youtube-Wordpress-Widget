@@ -1,0 +1,7 @@
+#!/bin/sh
+PHPRC=/home/rex/Desktop/Code/WordPress/Ytube/php/etc
+export PHPRC
+PHP_PEAR_SYSCONF_DIR=/home/rex/Desktop/Code/WordPress/Ytube/php/etc
+export PHP_PEAR_SYSCONF_DIR
+. /home/rex/Desktop/Code/WordPress/Ytube/php/../scripts/setenv.sh
+exec /home/rex/Desktop/Code/WordPress/Ytube/php/bin/php.bin "$@"

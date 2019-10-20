@@ -1,0 +1,8 @@
+#!/bin/sh
+
+PATH="/home/rex/Desktop/Code/WordPress/Ytube/apps/wordpress/bin:/home/rex/Desktop/Code/WordPress/Ytube/varnish/bin:/home/rex/Desktop/Code/WordPress/Ytube/sqlite/bin:/home/rex/Desktop/Code/WordPress/Ytube/php/bin:/home/rex/Desktop/Code/WordPress/Ytube/mysql/bin:/home/rex/Desktop/Code/WordPress/Ytube/letsencrypt/:/home/rex/Desktop/Code/WordPress/Ytube/apache2/bin:/home/rex/Desktop/Code/WordPress/Ytube/common/bin:$PATH"
+BITNAMI_ROOT="/home/rex/Desktop/Code/WordPress/Ytube"
+export BITNAMI_ROOT
+
+
+exec /bin/bash --noprofile --norc

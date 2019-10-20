@@ -1,0 +1,5 @@
+#!/bin/sh
+
+. /home/rex/Desktop/Code/WordPress/Ytube/scripts/setenv.sh
+
+exec /home/rex/Desktop/Code/WordPress/Ytube/varnish/bin/.varnishncsa.bin -n /home/rex/Desktop/Code/WordPress/Ytube/varnish/var/varnish "$@"

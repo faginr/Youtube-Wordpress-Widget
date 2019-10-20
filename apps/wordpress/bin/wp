@@ -1,0 +1,6 @@
+#!/bin/bash
+. /home/rex/Desktop/Code/WordPress/Ytube/scripts/setenv.sh
+export WP_CLI_CONFIG_PATH="/home/rex/Desktop/Code/WordPress/Ytube/apps/wordpress/bin/wp-cli.yml"
+export WP_CLI_PHP_USED="/home/rex/Desktop/Code/WordPress/Ytube/php/bin/php"
+
+exec "/home/rex/Desktop/Code/WordPress/Ytube/php/bin/php" "/home/rex/Desktop/Code/WordPress/Ytube/apps/wordpress/bin/wp-cli.phar" "$@"

@@ -1,0 +1,4 @@
+#!/bin/sh
+. /home/rex/Desktop/Code/WordPress/Ytube/php/../scripts/setenv.sh
+
+exec /home/rex/Desktop/Code/WordPress/Ytube/php/bin/composer.phar "$@"
